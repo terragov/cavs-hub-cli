@@ -69,7 +69,7 @@ For local development against the dev stack:
 ```sh
 export CAVS_API=http://localhost:8080
 cargo run -- login --token cavs_pat_xxx
-cargo run -- repo connect acme/game-assets
+cargo run -- repo connect acme/binary-assets
 ```
 
 ## Build

@@ -345,13 +345,13 @@
     <div class="term reveal">
       <div class="term-bar">
         <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
-        <span class="title">~/game-assets — cav</span>
+        <span class="title">~/binary-assets — cav</span>
       </div>
       <div class="term-body"><span class="cmd">cav login</span>
 <span class="out">Paste your CAVS access token: </span><span class="path">cavs_pat_••••••••••••</span>
 <span class="ok">✓ authenticated as orelvis · org: defensores-caa</span>
 
-<span class="cmd">cav repo connect defensores-caa/game-assets</span>
+<span class="cmd">cav repo connect defensores-caa/binary-assets</span>
 <span class="out">→ set lfs.url            </span><span class="ok">ok</span>
 <span class="out">→ wired cavs-lfs-agent   </span><span class="ok">ok</span>
 <span class="ok">✓ repository connected. push through CAVS is live.</span>
@@ -385,7 +385,7 @@
         <h3>Content-defined dedup, on every push</h3>
         <p>Once a repo is connected, Git LFS routes through <code style="font-family:var(--mono);color:var(--violet)">cavs-lfs-agent</code>. Assets are content-defined-chunked and deduplicated, so only bytes the Hub has never seen travel the wire.</p>
         <ul class="feat-list">
-          <li><span class="tick">▸</span> Ideal for large binary & game-asset repos</li>
+          <li><span class="tick">▸</span> Ideal for large binary & media-asset repos</li>
           <li><span class="tick">▸</span> Re-uploads of near-identical files collapse to deltas</li>
           <li><span class="tick">▸</span> Works with the Git LFS you already use — no new verbs to learn</li>
         </ul>
