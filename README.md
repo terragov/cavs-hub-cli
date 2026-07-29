@@ -1,8 +1,8 @@
 # cavs-hub-cli
 
-> **🚧 In development.** This project is a work in progress. There is no hosted
-> control plane yet, so `cav` defaults to a local dev stack
-> (`http://localhost:8080`). Point it elsewhere with `--api` or `$CAVS_API`.
+> `cav` talks to the hosted control plane at `https://cavsnode.com` by default.
+> Point it at a local dev stack or a self-hosted deployment with `--api` or
+> `$CAVS_API`.
 
 The **CAVS Node** command-line client — the `cav` command. See
 [Install](#install) below for the one-line install.
@@ -61,8 +61,7 @@ Config lives at `$XDG_CONFIG_HOME/cav/config.toml` (default
 1. `--api <url>` flag
 2. `$CAVS_API`
 3. the stored config
-4. the built-in default (`http://localhost:8080`, the local dev stack —
-   see the note below)
+4. the built-in default (`https://cavsnode.com`, the hosted control plane)
 
 For local development against the dev stack:
 

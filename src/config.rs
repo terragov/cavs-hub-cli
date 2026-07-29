@@ -8,10 +8,10 @@ use anyhow::{Context, Result};
 use serde::{Deserialize, Serialize};
 use std::path::{Path, PathBuf};
 
-/// Default control-plane base. The hosted API is still in development, so this
-/// points at the local dev stack for now. Override with `--api`, `$CAVS_API`,
-/// or by editing the stored config.
-pub const DEFAULT_API_BASE: &str = "http://localhost:8080";
+/// Default control-plane base: the hosted CAVS Node API. Override with `--api`,
+/// `$CAVS_API`, or by editing the stored config — that is how you point `cav` at
+/// a local dev stack (`http://localhost:8080`) or a self-hosted deployment.
+pub const DEFAULT_API_BASE: &str = "https://cavsnode.com";
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Config {
